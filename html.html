@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="featured-post">
+            <article>
+                <h2>Featured Post</h2>
+                <img src="images/featured.jpg" alt="Featured post image">
+                <p>This is the excerpt of the featured blog post. Click to read more...</p>
+                <button class="read-more">Read More</button>
+            </article>
+        </section>
+
+        <section class="blog-posts">
+            <h2>Recent Posts</h2>
+            <div class="posts-grid" id="postsContainer">
+                <!-- Posts will be loaded here via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <aside class="newsletter">
+        <div class="container">
+            <h3>Subscribe to our Newsletter</h3>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
